@@ -1,0 +1,17 @@
+src/.env
+src/vendor
+# Laravel logs/cache
+src/storage/*
+!src/storage/app
+!src/storage/framework
+!src/storage/logs
+# Node/npm
+src/node_modules
+src/public/hot
+src/public/storage
+src/mix-manifest.json
+# IDE/editor junk
+*.log
+*.DS_Store
+.idea
+.vscode
