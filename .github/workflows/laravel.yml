@@ -13,5 +13,9 @@ jobs:
           extensions: mbstring, bcmath, pdo, pdo_mysql
       - name: 📦 Install dependencies
         run: composer install --no-progress --prefer-dist
+      - name: 🧪 Setup Laravel Environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate
       - name: 🧪 Run Laravel Tests
         run: php artisan test
